@@ -39,14 +39,14 @@ const myQuestionBank = [
     },
     {
       question:
-        "What was the name of the WWF professional wrestling tag team made up of the wrestlers Ax and Smash?",
+        "The tallest building in the world is located in which city?",
       answers: [
-        "Demolition",
-        "The Dream Team",
-        "The Bushwhackers",
-        "The British Bulldogs"
+        "Texas",
+        "Dubai",
+        "Tokyo",
+        "Lima"
       ],
-      correct: "Demolition",
+      correct: "Dubai",
       questionId: "6"
     },
     {
@@ -64,9 +64,9 @@ const myQuestionBank = [
     },
     {
       question:
-        "In the video-game franchise Kingdom Hearts, the main protagonist, carries a weapon with what shape?",
-      answers: ["Key", "Sword", "Pen", "Cellphone"],
-      correct: "Key",
+        "What is the capital city of New Zealand?",
+      answers: ["Canbera", "Kingston", "Welkster", "Wellington"],
+      correct: "Wellington",
       questionId: "9"
     },
     {
@@ -125,16 +125,16 @@ const myQuestionBank = [
     },
     {
       question:
-        "What does the 'S' stand for in the abbreviation SIM, as in SIM card? ",
-      answers: ["Subscriber", "Single", "Secure", "Solid"],
-      correct: "Subscriber",
+        "Name the composer behind the soundtracks of The Lion King, Inception and Pirates of the Caribbean.? ",
+      answers: ["Hanz Zimmer", "sir Robinson", "Douglas Hodge", "Walter Sobchak"],
+      correct: "Hanz Zimmer",
       questionId: "18"
     },
     {
       question:
-        "What word represents the letter 'T' in the NATO phonetic alphabet?",
-      answers: ["Tango", "Target", "Taxi", "Turkey"],
-      correct: "Tango",
+        "Which 2014 Seth Rogan film caused the North Korean government to threaten action against the United States?",
+      answers: ["The Dictator", "The Comic", "The Interview", "Turtle"],
+      correct: "The Interview",
       questionId: "19"
     },
     {
@@ -358,9 +358,9 @@ const myQuestionBank = [
       questionId: "48"
     },
     {
-      question: "Which candy is NOT made by Mars?",
-      answers: ["Almond Joy", "M&M's", "Twix", "Snickers"],
-      correct: "Almond Joy",
+      question: "In tennis, who has won more Women’s Singles Grand Slam titles –   or  ?",
+      answers: ["Martina Navratilova", "Serena Williams", "Anastasia", "Britny Holms"],
+      correct: "Serena Williams",
       questionId: "49"
     },
     {
