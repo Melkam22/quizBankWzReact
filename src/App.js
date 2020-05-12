@@ -33,7 +33,7 @@ trueAnswer = (response, correct)=>{
     packOfQuiz: this.state.packOfQuiz < 10 ? this.state.packOfQuiz + 1 : 10 
   })
 } 
-
+ 
  
 
   render(){
@@ -48,7 +48,9 @@ trueAnswer = (response, correct)=>{
           />)  
       )}
       {/* add result on each click of answer, callback of trueAnswer function*/}
-       {this.state.packOfQuiz === 10 ? < Replay score={this.state.score}/> : null}{/*<h2>{this.state.score}</h2> instead put <Replay /> */}
+       {this.state.packOfQuiz === 10 ? < Replay score={this.state.score}
+                                                rematch={this.rematch}
+       /> : null}{/*<h2>{this.state.score}</h2> instead put <Replay /> */}
     </div>
   );
 }
