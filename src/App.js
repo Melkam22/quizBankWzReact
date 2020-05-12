@@ -33,11 +33,18 @@ trueAnswer = (response, correct)=>{
     packOfQuiz: this.state.packOfQuiz < 10 ? this.state.packOfQuiz + 1 : 10 
   })
 } 
- 
+//rematch
+rematch = () =>{
+  this.quizFunction();
+  this.setState({
+    score: 0,
+    packOfQuiz: 0
+  })
+} 
  
 
-  render(){
-  return (
+render(){
+return (
     <div className="App">
       <h1>QuizBank with React</h1>
       {this.state.quizBank.length > 0 && this.state.packOfQuiz < 10 && this.state.quizBank.map((
