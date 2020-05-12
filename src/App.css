@@ -1,11 +1,30 @@
 
+.App{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 /* from Question&Answer */
 .quizAnswer{
-  width: 80%;
-  min-height: 64px;
-  background: rgba(33,55,2,.5);
-  margin-left: 10%;
+  width: 90%;
+  min-height: 74px;
+  background: rgba(23, 96, 6, 0.5);
+  margin-left: 5%;
   box-shadow: 4px 6px 8px white;
+}
+
+.questionList{
+  width: 80%;
+  margin-left: 2%;
+  color: white;
+  font-size: 20px;
+  padding-top: 2%; 
+  padding-bottom: 1%;
+  font-weight: bold;
+}
+h1{text-align: center;
 }
 
 .answerBtn{
@@ -14,16 +33,10 @@
   border: none;
   margin-left: 4%;
   padding-bottom: 1%;
+  background: lightslategrey;
 }
 
-.questionList{
-  width: 80%;
-  margin-left: 2%;
-  color: white;
-  font-size: 20px; 
-}
-h1{text-align: center;
-}
+ 
 
 /* from Replay.js */
 .replayBox{
