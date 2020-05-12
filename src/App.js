@@ -5,7 +5,9 @@ import QuestionAnswer from './resource/Question&Answer';
 
 class App extends Component{
   state = {
-    quizBank: []
+    quizBank: [],
+    score: 0,
+    packOfQuiz: 0
   }
 quizFunction = ()=>{
   QuizBank().then(question=>{
@@ -18,18 +20,33 @@ quizFunction = ()=>{
 componentDidMount(){
   this.quizFunction()
 }
+ 
+//choosing correct answer function
+trueAnswer = (response, correct)=>{
+  if(response === correct){
+    this.setState({
+      score: this.state.score + 1
+    })
+  }
+  this.setState({
+    packOfQuiz: this.state.packOfQuiz < 10 ? this.state.packOfQuiz + 1 : 10 
+  })
+} 
+
+ 
 
   render(){
   return (
     <div className="App">
       <h1>QuizBank with React</h1>
-      {this.state.quizBank.length > 0 && this.state.quizBank.map((
+      {this.state.quizBank.length > 0 && this.state.packOfQuiz < 10 && this.state.quizBank.map((
         {question, answers, correct, questionId})=>(<QuestionAnswer question={question}
                                                                 allOptions={answers}
-                                                                correctAnswer={response => this.correctAnswer(response, correct)} 
+                                                                correctAnswer={response => this.trueAnswer(response, correct)}
                                                                 key={questionId}
-          />)
+          />)  
       )}
+       {this.state.packOfQuiz  === 10 ? <h2>{this.state.score}</h2> : null}
     </div>
   );
 }

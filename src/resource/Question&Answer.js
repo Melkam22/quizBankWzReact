@@ -10,7 +10,7 @@ const QuestionAnswer = ({question, allOptions, correctAnswer}) =>{
                <div className="questionList">{question}</div>  
 
                {response.map((item, b)=>(
-                   <button key={b} className="answerBtn" onClick={()=>setResponse([item]), correctAnswer(item)}>
+                   <button key={b} className="answerBtn" onClick={()=>{setResponse([item]); correctAnswer(item)}}>
                         {item}
                    </button>
                ))} 
