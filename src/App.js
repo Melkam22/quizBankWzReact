@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import QuizBank from './QuizBankServer/quizBank';
 import QuestionAnswer from './resource/Question&Answer';
+import Replay from './resource/Replay';
 
 class App extends Component{
   state = {
@@ -46,7 +47,8 @@ trueAnswer = (response, correct)=>{
                                                                 key={questionId}
           />)  
       )}
-       {this.state.packOfQuiz  === 10 ? <h2>{this.state.score}</h2> : null}
+      {/* add result on each click of answer, callback of trueAnswer function*/}
+       {this.state.packOfQuiz === 10 ? < Replay score={this.state.score}/> : null}{/*<h2>{this.state.score}</h2> instead put <Replay /> */}
     </div>
   );
 }
